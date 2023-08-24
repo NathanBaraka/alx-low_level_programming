@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _strcat - concatenates two strings
  * @dest: input value
@@ -8,23 +8,23 @@ include "main.h"
  */
 char *_strcat(char *dest, char *src)
 {
-	int n;
-	int b;
+	int i;
+	int j;
 
-	n = 0;
-	while (dest[n] != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		n++;
+		i++;
 	}
-	b = 0;
-	while (src[b] != '\0')
+	j = 0;
+	while (src[j] != '\0')
 	{
-		dest[n] = src[b];
-		n++;
-		b++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
-	dest[n] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
 
