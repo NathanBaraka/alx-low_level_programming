@@ -4,6 +4,7 @@
  * free_listint2 - Like the listint_t it also frees the lists
  * @head: This points to the lists in the listint_t to be freed
  */
+void free_listint2(listint_t **head)
 {
 	listint_t *temp;
 
