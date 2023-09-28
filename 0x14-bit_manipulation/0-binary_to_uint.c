@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * binary_to_uint - this changed a binary to an integer value
  * @b: This is reference to the string that has the binary number
@@ -20,6 +19,5 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		dec_val = 2 * dec_val + (b[i] - '0');
 	}
-
  return (dec_val);
 }
